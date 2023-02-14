@@ -54,7 +54,7 @@ The API is serviced by the following RESTful endpoints:
 
 ## ```/``` - GET
 
-```/<int:movie_id>``` - Return 3 recommendations and their relevance for a given `movie_id`  
+```/<int:movie_id>``` - return 3 recommendations and their relevance for a given `movie_id`  
 
 Example GET requests:
 
