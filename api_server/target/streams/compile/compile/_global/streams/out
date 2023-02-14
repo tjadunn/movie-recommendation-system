@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/tobydunn/Dev/git/rec_project_scala/api_server/src/main/scala/com/api/Main.scala:63:17: value ipv4 is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withHost(ipv4"0.0.0.0")[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/tobydunn/Dev/git/rec_project_scala/api_server/src/main/scala/com/api/Main.scala:64:17: value port is not a member of StringContext[0m
+[0m[[0m[31merror[0m] [0m[0m      .withPort(port"8080")[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

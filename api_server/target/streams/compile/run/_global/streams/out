@@ -1,0 +1,9 @@
+[0m[[0m[31merror[0m] [0m[0mjava.net.BindException: Address already in use[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.ch.Net.bind0(Native Method)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.ch.Net.bind(Net.java:438)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.ch.Net.bind(Net.java:430)[0m
+[0m[[0m[31merror[0m] [0m[0m	at sun.nio.ch.AsynchronousServerSocketChannelImpl.bind(AsynchronousServerSocketChannelImpl.java:163)[0m
+[0m[[0m[31merror[0m] [0m[0m	at java.nio.channels.AsynchronousServerSocketChannel.bind(AsynchronousServerSocketChannel.java:193)[0m
+[0m[[0m[31merror[0m] [0m[0m	at fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$serverResource$7(SocketGroupPlatform.scala:96)[0m
+[0m[[0m[31merror[0m] [0m[0m	at delay @ fs2.io.net.SocketGroupCompanionPlatform$AsyncSocketGroup.$anonfun$serverResource$6(SocketGroupPlatform.scala:93)[0m
+[0m[[0m[31merror[0m] [0m[0m(api_server / Compile / [31mrun[0m) java.net.BindException: Address already in use[0m

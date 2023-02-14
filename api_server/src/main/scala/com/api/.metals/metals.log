@@ -1,0 +1,4 @@
+2023.02.11 21:27:34 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tobydunn/Dev/git/disco-personalisation-coding-challenge-public/src/main/scala/com/recommender/.metals/lsp.trace.json or /Users/tobydunn/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2023.02.11 21:27:35 INFO  logging to file /Users/tobydunn/Dev/git/disco-personalisation-coding-challenge-public/.metals/metals.log[0m
+2023.02.12 00:46:49 INFO  tracing is disabled for protocol LSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/tobydunn/Dev/git/disco-personalisation-coding-challenge-public/src/main/scala/com/recommender/.metals/lsp.trace.json or /Users/tobydunn/Library/Caches/org.scalameta.metals/lsp.trace.json[0m
+2023.02.12 00:46:49 INFO  logging to file /Users/tobydunn/Dev/git/disco-personalisation-coding-challenge-public/.metals/metals.log[0m
