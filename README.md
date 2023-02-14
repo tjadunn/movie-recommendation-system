@@ -58,14 +58,12 @@ The API is serviced by the following RESTful endpoints:
 
 Example GET requests:
 
-Request
 ```curl -X GET http://0.0.0.0:8080/2 ```
 Returns
 ```{"id":2,"recommended":[15,113,58],"relevance":[1,2,3]}```
 
 So if you like The Godfather, you may like Casino, The Godfather II and Goodfellas (id's 15, 113 and 58) Pretty good!
 
-Request
 ```curl -X GET http://0.0.0.0:8080/140```
 Returns
 ```{"id":20,"recommended":[31,45,128],"relevance":[1,2,3]}```
@@ -73,14 +71,12 @@ Returns
 So if you like The Exorcist, you may like The Shining, The Thing and The Help
 
 
-Request
 ```curl -X GET http://0.0.0.0:8080/1"```
 Returns
 ```{"id":1,"recommended":[58,105,124],"relevance":[1,2,3]}```
 
 So if you like The Shawshank Redemption, you may like Goodfellas, The Help and Dogville. 
 
-Request
 ```curl -X GET http://0.0.0.0:8080/96"```
 Returns
 ```{"id":96,"recommended":[70,6,24],"relevance":[1,2,3]}```
