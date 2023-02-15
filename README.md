@@ -2,7 +2,7 @@
 
 This document describes the Movie Recommender API and it's features.
 
-Was developed on machine with sbt 1.8.2,  scala 2.13.7, java version 1.8.0_351
+Was developed on a machine with sbt 1.8.2,  scala 2.13.7, java version 1.8.0_351
 
 # Core functionality
 
