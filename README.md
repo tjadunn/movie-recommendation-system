@@ -50,7 +50,7 @@ In a real production environment we would not be using a text file for the looku
 
 Spark was chosen as we can scale this appropriately  - from experience even using a relatively naive algorithm such as an n^2 Euclidean comparison like we've chosen, a 20 node cluster can deliver recommendations for 6 million items in about 2.5 hours.
 
-The method we've used could be made faster and computationally feasable for huge datasets by using local sensitivity hashing or another probabilistic data structure / join algorithm
+The method we've used could be made faster and more computationally feasable for huge datasets by using local sensitivity hashing or another probabilistic data structure / join algorithm
 
 ### Run the API
 To run the recommendations API, from rec_project root run
