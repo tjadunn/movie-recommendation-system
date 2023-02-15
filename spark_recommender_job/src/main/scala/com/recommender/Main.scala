@@ -54,7 +54,7 @@ object Recommender {
     val hashing_tf = new HashingTF().setInputCol("tags").setOutputCol("tags_features")
     val hashed_genre_tags= hashing_tf.transform(movies_without_stop_words)
 
-    // Hash the movie titlr
+    // Hash the movie title
     val hashing_tf_title = new HashingTF().setInputCol("title").setOutputCol(
       "title_features"
     )
@@ -87,7 +87,8 @@ object Recommender {
     //    +---+------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
     //
 
-    // We now want to find which of these features vectors are closest to each other
+    // We now want to find which of these feature vectors are closest to each other
+
     // Create two identical datasets with different refernce columns
     val dataset_a = final_df.select(
       col("id").alias("idA"), col("features").alias("featuresA")
@@ -107,7 +108,7 @@ object Recommender {
       col("idA") =!= col("idB")
     ).withColumn("distances", dist_func(col("featuresA"), col("featuresB")))
 
-    // Not we want to find the top closest vectors for eah datapoint - this lends itself to a window function
+    // Now we want to find the top closest vectors for eah datapoint - this lends itself to a window function
     val windowspec = Window.partitionBy("idA").orderBy("distances")
 
     // Calculate the row number for each distance then filter and get the top 3 recs
