@@ -18,7 +18,7 @@ Questions around how much the movie database is being updated would also determi
 
 # To run the tests
 
-from rec_project root run
+from movie-recommendation-system root run
 
 - ```make test```
 
@@ -32,7 +32,7 @@ First we need to actually generate the recommendations from the `metadatas.json`
 
 **N.B**: Spark can be quite picky about Java/Scala versions - so we run it in docker
 
-To run the recommendations job, from rec_project root run:
+To run the recommendations job, from movie-recommendation-system root run:
 
 - ```make build_recs_docker```
 
@@ -55,7 +55,7 @@ Spark was chosen as we can scale this appropriately  - from experience even usin
 The method we've used could be made faster and more computationally feasable for huge datasets by using local sensitivity hashing or another probabilistic data structure / join algorithm
 
 ### Run the API
-To run the recommendations API, from rec_project root run
+To run the recommendations API, from movie-recommendation-system root run
 
 - ```make run_server``` 
 
