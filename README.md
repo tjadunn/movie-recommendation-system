@@ -1,8 +1,8 @@
- # Movie Recommender
+# Movie Recommender
 
 This document describes the Movie Recommender API and it's features.
 
-Was developed on machine with sbt 1.8.2 (Homebrew Java 19.0.2)
+Was developed on machine with sbt 1.8.2,  scala 2.13.7, java version 1.8.0_351
 
 # Core functionality
 
@@ -20,9 +20,9 @@ Questions around how much the movie database is being updated would also determi
 
 from rec_project root run
 
-```sbt test```
+- ```make test```
 
-This will run the API and data layer tests
+This will run all the service tests via `sbt test`
 
 # Build steps
 
@@ -32,7 +32,13 @@ First we need to actually generate the recommendations from the `metadatas.json`
 
 To run the recommendations job, from rec_project root run:
 
-```sbt build_recs``` -  this will output to a `db.json` of recommendations. 
+- ```make build_recs``` 
+
+This will output to a `db.json` of recommendations via `sbt build_recs` 
+
+**N.B**: Spark can be quite picky about Java/Scala versions - if the above fails try which will attempt it in docker
+- ```make build_recs_docker```
+
 
 **Notes:**
 This is written as a Spark ML pipeline using feature hashing and a similarity matrix 
@@ -46,7 +52,9 @@ The method we've used could be improved by using local sensitivity hashing or an
 ### Run the API
 To run the recommendations API, from rec_project root run
 
-```sbt run_server``` - Starts up the web server on `http://0.0.0.0:8080`
+- ```make run_server``` 
+
+Starts up the web server on `http://0.0.0.0:8080` via `sbt run_server`
 
 
 # Endpoints
@@ -58,29 +66,25 @@ The API is serviced by the following RESTful endpoints:
 
 Example GET requests:
 
-```curl -X GET http://0.0.0.0:8080/2 ```
+- ```curl -X GET http://0.0.0.0:8080/2 ```
 Returns
 ```{"id":2,"recommended":[15,113,58],"relevance":[1,2,3]}```
-
 So if you like The Godfather, you may like Casino, The Godfather II and Goodfellas (id's 15, 113 and 58) Pretty good!
 
-```curl -X GET http://0.0.0.0:8080/140```
+- ```curl -X GET http://0.0.0.0:8080/140```
 Returns
 ```{"id":20,"recommended":[31,45,128],"relevance":[1,2,3]}```
-
 So if you like The Exorcist, you may like The Shining, The Thing and The Help
 
 
-```curl -X GET http://0.0.0.0:8080/1"```
+- ```curl -X GET http://0.0.0.0:8080/1"```
 Returns
 ```{"id":1,"recommended":[58,105,124],"relevance":[1,2,3]}```
-
 So if you like The Shawshank Redemption, you may like Goodfellas, The Help and Dogville. 
 
-```curl -X GET http://0.0.0.0:8080/96"```
+- ```curl -X GET http://0.0.0.0:8080/96"```
 Returns
 ```{"id":96,"recommended":[70,6,24],"relevance":[1,2,3]}```
-
 So if you like The Wizard of Oz you may like The Princess Bride, The General and The Message
 
 
