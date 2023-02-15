@@ -23,7 +23,6 @@ lazy val api_server = project.in(file("api_server")).settings(
       "org.scalatest" %% "scalatest" % "3.2.15" % "test",
       "org.scalactic" %% "scalactic" % "3.2.15",
 
-      "org.scalatestplus" %% "mockito-3-4" % "3.2.10.0" % Test,
       "org.scalamock" %% "scalamock" % "5.1.0" % Test,
 
       "ch.qos.logback" % "logback-classic" % "1.1.3" % Runtime
