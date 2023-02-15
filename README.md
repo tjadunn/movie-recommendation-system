@@ -36,8 +36,10 @@ To run the recommendations job, from rec_project root run:
 
 This will output to a `db.json` of recommendations via `sbt build_recs` 
 
-**N.B**: Spark can be quite picky about Java/Scala versions - if the above fails try which will attempt it in docker
+**N.B**: Spark can be quite picky about Java/Scala versions - if the above fails try 
 - ```make build_recs_docker```
+
+which will attempt in docker
 
 
 **Notes:**
