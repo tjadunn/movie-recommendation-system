@@ -42,6 +42,8 @@ If you wish to run it on your local machine instead
 
 - ```make build_recs```
 
+This will output to a `db.json` of recommendations via `sbt build_recs` 
+
 
 **Notes:**
 This is written as a Spark ML pipeline using feature hashing and a similarity matrix 
@@ -58,11 +60,6 @@ To run the recommendations API, from rec_project root run
 - ```make run_server``` 
 
 Starts up the web server on `http://0.0.0.0:8080` via `sbt run_server`
-
-
-- ```make build_recs``` 
-
-This will output to a `db.json` of recommendations via `sbt build_recs` 
 
 
 # Endpoints
