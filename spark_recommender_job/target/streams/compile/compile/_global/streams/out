@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/tobydunn/Dev/git/disco-personalisation-coding-challenge-public/rec_project/spark_recommender_job/src/main/scala/com/recommender/Main.scala:42:9: movie_data is already defined as value movie_data[0m
-[0m[[0m[31merror[0m] [0m[0m    val movie_data = spark.read.json("metadatas.json").drop("_corrupt_record").na.drop[0m
-[0m[[0m[31merror[0m] [0m[0m        ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

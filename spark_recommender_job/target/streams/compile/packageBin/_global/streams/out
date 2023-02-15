@@ -2,14 +2,6 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	metadatas.json[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/metadatas.json[0m
-[0m[[0m[0mdebug[0m] [0m[0m	top_3_kv.csv[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/top_3_kv.csv[0m
-[0m[[0m[0mdebug[0m] [0m[0m	test_array.json[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/test_array.json[0m
-[0m[[0m[0mdebug[0m] [0m[0m	test_out.json[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/test_out.json[0m
-[0m[[0m[0mdebug[0m] [0m[0m	test_out_2.json[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/test_out_2.json[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sparkRecommender[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/sparkRecommender[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sparkRecommender/Recommender$$typecreator2$1.class[0m
@@ -20,6 +12,4 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/sparkRecommender/Recommender$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	sparkRecommender/Recommender.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/sparkRecommender/Recommender.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	output_kv.csv[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /Users/tobydunn/Dev/git/rec_project_scala/spark_recommender_job/target/scala-2.12/classes/output_kv.csv[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
