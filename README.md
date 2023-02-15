@@ -30,16 +30,17 @@ This will run all the service tests via `sbt test`
 
 First we need to actually generate the recommendations from the `metadatas.json` file
 
+**N.B**: Spark can be quite picky about Java/Scala versions - so we run it in docker
+
 To run the recommendations job, from rec_project root run:
 
-- ```make build_recs``` 
-
-This will output to a `db.json` of recommendations via `sbt build_recs` 
-
-**N.B**: Spark can be quite picky about Java/Scala versions - if the above fails try 
 - ```make build_recs_docker```
 
 which will attempt in docker
+
+If you wish to run it on your local machine
+
+- ```make build_recs```
 
 
 **Notes:**
@@ -57,6 +58,11 @@ To run the recommendations API, from rec_project root run
 - ```make run_server``` 
 
 Starts up the web server on `http://0.0.0.0:8080` via `sbt run_server`
+
+
+- ```make build_recs``` 
+
+This will output to a `db.json` of recommendations via `sbt build_recs` 
 
 
 # Endpoints
